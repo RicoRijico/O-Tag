@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">OtagChatApp</string>
+
+    <!--SettingActivity-->
+    <string name="txt_seeting">Setting</string>
+    <string name="txt_general">General</string>
+    <string name="txt_Global">Global settings</string>
+    <string name="txt_connection">Connection and administrator setting </string>
+    <string name="txt_User">User modes</string>
+    <string name="txt_mode">User mode settings and selection</string>
+    <string name="txt_other">Other</string>
+    <string name="txt_system">Measurement system</string>
+    <string name="txt_Auto">Auto</string>
+    <string name="txt_Contact">Contact us</string>
+    <string name="txt_help">Help</string>
+    <string name="txt_logout">LogOut</string>
+
+    <!--ConnectionActivity-->
+    <string name="txt_Gps">GPS Connection</string>
+    <string name="txt_Internet">Internet Connection</string>
+    <string name="txt_Service">Service state</string>
+    <color name="some_color">#F81111</color>
+
+</resources>

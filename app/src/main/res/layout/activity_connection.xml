@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConnectionActivity">
+
+    <TextView
+        android:id="@+id/txt_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/txt_Gps"
+        android:textColor="#1361FD"/>
+    <View
+        android:id="@+id/view_01"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/txt_gps"/>
+    <TextView
+        android:id="@+id/text_internet"
+        android:layout_below="@+id/view_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_Internet"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:textColor="#1361FD"/>
+    <View
+        android:id="@+id/view_02"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/text_internet"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_02">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:id="@+id/text_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_Service"
+            android:textColor="#1361FD" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textOff="OFF"
+            android:textOn="ON"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:thumb="@drawable/sw_thumb"
+            app:showText="true"
+            app:track="@drawable/sw_track" />
+    </LinearLayout>
+</RelativeLayout>
+
+</RelativeLayout>

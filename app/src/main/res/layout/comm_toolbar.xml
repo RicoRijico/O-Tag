@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="#1361FD"
+    app:contentInsetStart="0dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_left_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_left_btn"
+                android:layout_width="57.5dp"
+                android:layout_height="41dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_attach_file_black_24dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/toolbar_title_center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#ffff"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="LoginActivity" />
+
+        <TextView
+            android:id="@+id/toolbar_title_left"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#ffff"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/rl_left_btn"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/iv_title2_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/man_user"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_title2_right"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="18dp"
+                android:gravity="center"
+                android:text="다음"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_title3_right1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="22dp"
+                android:background="@drawable/sw_thumb"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_title3_right2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/man_user"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>
